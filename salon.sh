@@ -61,10 +61,10 @@ CUSTOMER_DETAILS() {
   INFO_SERVICE=$($PSQL "SELECT name From services Inner Join appointments Using(service_id)  Where customer_id = $1")
   INFO_NAME=$($PSQL "SELECT name From customers Inner Join appointments Using(customer_id)  Where customer_id = $1")
 
-  MESSASE $INFO_TIME $INFO_SERVICE $INFO_NAME
+  MESSAGE $INFO_TIME $INFO_SERVICE $INFO_NAME
 }
 
-MESSASE() {
+MESSAGE() {
   if [[ -z $EXIST_CUSTOMER_PHONE ]]; then
     echo -e "\nI have put you down for a $2 at $1, $3."
   else

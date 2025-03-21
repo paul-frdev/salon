@@ -191,13 +191,13 @@ SET DEFAULT nextval('public.services_service_id_seq'::regclass);
 INSERT INTO public.appointments
 VALUES (1,
         1,
-        3,
+        1,
         '11:00');
 
 
 INSERT INTO public.appointments
-VALUES (12,
-        12,
+VALUES (2,
+        2,
         1,
         '12:00');
 
@@ -208,13 +208,13 @@ VALUES (12,
 INSERT INTO public.customers
 VALUES (1,
         '555-555-5555',
-        'Jake');
+        'Sara');
 
 
 INSERT INTO public.customers
-VALUES (12,
+VALUES (2,
         '555-555-4444',
-        'Mike');
+        'Olga');
 
 --
 -- Data for Name: services; Type: TABLE DATA; Schema: public; Owner: freecodecamp
@@ -248,13 +248,13 @@ VALUES (5,
 -- Name: appointments_appointment_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 12, true);
+SELECT pg_catalog.setval('public.appointments_appointment_id_seq', 2, true);
 
 --
 -- Name: customers_customer_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
 --
 
-SELECT pg_catalog.setval('public.customers_customer_id_seq', 12, true);
+SELECT pg_catalog.setval('public.customers_customer_id_seq', 2, true);
 
 --
 -- Name: services_service_id_seq; Type: SEQUENCE SET; Schema: public; Owner: freecodecamp
